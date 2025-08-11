@@ -1,0 +1,26 @@
+{
+"manifest_version": 2,
+"name": “zetapacer",
+"description": "A pacer for Zetamac",
+"version": "1.0",
+
+
+"content_scripts": [
+    {
+      "matches": ["arithmetic.zetamac.com/*"],
+      "js": ["pacer.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
+
+  
+"browser_action": {
+"default_icon": “circle.png”,
+"default_popup": “LAYOUT HTML FILE"
+},
+"permissions": [
+"tabs",
+"storage"
+]
